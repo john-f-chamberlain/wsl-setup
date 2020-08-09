@@ -13,4 +13,14 @@ I use this script to automatically configure WSL for Composer/NodeJS development
  - Verifies SSH key is associated with a GitHub account
  
  ## Usage
+ I use this with the Ubuntu 20.04 LTS WSL available through the Microsoft store. YMMV with other editions.
+ I'd suggest only using this on a fresh WSL installation, but it shouldn't really cause many issues on existing ones.
+ To reset your WSL installation
+  - Start Menu - Search for "Apps & Features"
+  - Click on "Ubuntu 20.04 LTS"
+  - Click "Advanced options"
+  - Click "Reset"
+  
+Launch Ubuntu 20.04 LTS from your start menu and follow the initial configuration of adding a user account, then run the following command:
+
  `curl -sL https://raw.githubusercontent.com/john-f-chamberlain/wsl-setup/master/setup.sh | sudo bash -s`

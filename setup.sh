@@ -7,6 +7,7 @@ fi
 
 # Set nameservers... sometimes WSL
 echo -e '[network]\ngenerateResolvConf = false' > /etc/wsl.conf
+rm -f /etc/resolv.conf # This is a symlink by default.
 echo -e 'nameserver 1.1.1.1\nnameserver 1.0.0.1' > /etc/resolv.conf
 
 echo "Installing Prerequisites...";
